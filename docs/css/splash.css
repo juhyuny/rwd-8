@@ -1,0 +1,52 @@
+.splash-area {
+  width: 100%;
+  height: 100vh;
+  background-color: yellow;
+  background: var(--grayscale-white);
+  color: var(--primary-blue-1);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  animation: fadeEffect 3000ms ease-in-out both;
+}
+
+.splash-logo {
+  width: 32%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; 
+  
+  /* figure image 요소 */
+  & .splash-image {
+    /* width: clamp(80px, 100%, 160px); */
+    width: clamp(5rem, 100%, 9.375rem);
+    /* width: 100%; */
+    /* max-width: 100%; */
+  }
+  
+  /* figure caption 요소 */
+  & .splash-caption {
+    text-align: center;
+    font-size: clamp(1.5rem, 10vw, 6rem);
+    color: darkblue;
+    font-weight: 900;
+  }
+}
+
+
+
+@media (min-width:768px) {
+  .splash-caption {
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .splash-area {
+    background: var(--primary-blue-1);
+    color: var(--grayscale-white);
+  }
+  
+}
