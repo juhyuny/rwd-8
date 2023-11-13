@@ -18,7 +18,36 @@
 
 /* 모바일 */
 @media (max-width: 48em) {
+  .navigation {
+    height: 100vh;
+    background-color: var(--grayscale-dark-gray);
+    color: var(--grayscale-white);
+    /* display: flex;
+    flex-flow: column nowrap; */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .navigation li {
+    padding: 0 10px;
+  }
+  .navigation li a {
+    display: block;
+    border-top: .5px solid var(--primary-blue-2);
+    padding: 12px; 
+  }
+  .navigation li:hover {
+    background-color: var(--primary-blue-1);
+  }
   
+  .navigation .button-close {
+    display: block;
+    /* order: -1;
+    align-self: flex-end; */
+    grid-area: 1/1/2/2;
+    justify-self: end;
+    
+  }
 }
 
 /* 데스크탑 */
