@@ -1,0 +1,32 @@
+/* 컴포넌트 컨테이너 */
+.component-container {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1rem;
+  padding: 2rem;
+} 
+
+.navigation .button-close {
+  display: none;
+}
+
+.navigation {
+  background-color: yellow;
+}
+
+
+
+/* 모바일 */
+@media (max-width: 48em) {
+  
+}
+
+/* 데스크탑 */
+@media (min-width: 48em) {
+  .navigation ul {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: var(--spacing-sm);
+  color: var(--primary-blue-1);
+}
+}
