@@ -1,0 +1,53 @@
+/* 컴포넌트 컨테이너 */
+.header .brand {
+  font-size: 1em;
+  line-height: 1;
+}
+
+.header-inner {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.125em;
+}
+
+@media (max-width:768px) {
+  .header {
+    padding-left: 18px;
+  }
+  .navigation {
+    transform: translate(150vw);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .navigation.is-active {
+    transform: none;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .header {
+    position: sticky;
+    top:0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95 );
+    box-shadow: 0px 1px 1px 0 var(--shadow-type-3);
+  }
+  .header-inner {
+    /* width: 740px; */
+    /* width: 96.35%; */
+    width: clamp(740px, 96.35%, 1200px);
+    margin: 0 auto;
+  }
+  
+  .header .button-burger,
+  .navigation .button-close {
+    display: none;
+  }
+}

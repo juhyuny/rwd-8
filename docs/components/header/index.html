@@ -4,13 +4,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>버튼 컴포넌트</title>
+  <title>헤더 컴포넌트</title>
   <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body>
-  <div class="button-container">
-    <div class="button-wrapper">
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="brand">
+        <a href="/views/home.html" class="logo-link">
+          <img src="/images/brand.svg" alt="EDIYA COFFEE" />
+        </a>
+      </h1>
       <button type="button" class="button button-burger button-bg button-none" aira-label="메뉴 열기">
         <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1.17391 12H16.8261C18.3913 12 18.3913 14 16.8261 14H1.17391C-0.391328 14 -0.391336 12 1.17391 12Z"
@@ -21,13 +26,21 @@
             fill="#616161" />
         </svg>
       </button>
+      <nav class="navigation" aria-label="메인 메뉴">
+        <ul>
+          <li><a href="/views/signin.html">로그인</a></li>
+          <li><a href="/views/signup.html">회원가입</a></li>
+          <li><a href="/views/beverage.html">이디야 음료</a></li>
+          <li><a href="/views/news.html">이디야 뉴스</a></li>
+          <li><a href="/views/store.html">매장찾기</a></li>
+        </ul>
+        <button type="button" class="button button-hidden button-none button-scale button-close" aira-label="메뉴 닫기">
+          <span class="close" aria-hidden="true">✖</span>
+        </button>
+      </nav>
     </div>
-    <div class="button-wrapper">
-      <button type="button" class="button button-none button-scale button-close" aira-label="메뉴 닫기">
-        <span class="close" aria-hidden="true">✖</span>
-      </button>
-    </div>
-  </div>
+
+  </header>
 </body>
 
 </html>

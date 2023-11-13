@@ -10,11 +10,6 @@
   display: none;
 }
 
-.navigation {
-  background-color: yellow;
-}
-
-
 
 /* 모바일 */
 @media (max-width: 48em) {
@@ -26,7 +21,10 @@
     flex-flow: column nowrap; */
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto;
+    grid-template-rows: 50px auto;
+  }
+  .navigation ul {
+    padding-top: 56px;
   }
   .navigation li {
     padding: 0 10px;
