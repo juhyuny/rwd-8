@@ -22,6 +22,8 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50px auto;
+    /* 임시로 지정 추후 삭제 요망 */
+    display: none;
   }
   .navigation ul {
     padding-top: 56px;

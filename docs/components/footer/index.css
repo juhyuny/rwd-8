@@ -6,24 +6,121 @@
   line-height: 1.5;
   letter-spacing: -0.015em;
   text-align: center;
+  padding-top: 2.5em;
   padding-bottom: 2.5em;
 }
 
-.footer * {
-    font-style: normal;
+
+.footer-inner {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1.67em;  
+}
+
+[class*='footer-wrapper'] {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  
+}
+
+.footer-wrapper-1 {
+  border-bottom: 1px solid var(--grayscale-gray);
+}
+
+.guide {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.address {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+
 }
 
 @media (min-width: 768px) {
-  .footer-wrapper-1 {
-    margin: 0 auto;
-    border-bottom: 1px solid var(--grayscale-gray);
+  .guide {
+    flex-wrap: nowrap;
   }
   
+  .address {
+    flex-flow: row wrap;
+    width: clamp(610px, 80%, 800px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .footer * {
+    font-style: normal;
+}
+
+.footer-wrapper-1 {
+  border-bottom: 1px solid var(--grayscale-gray);
+}
+
+.guide {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 1.6em 0 ;
+  column-gap: 1.15em;
+  margin: 0 auto;
+}
+
+.footer-wrapper-2 {
+  margin: 2.5em auto 0;
+}
+  
+.footer-wrapper-3 {
+  margin-top: 2em;
+}
+
+.footer-wrapper-4 {
+  margin-top: 1.6em;
+}
+.address {
+  width: clamp(610px, 79.427%, 800px);
+  margin: 0 auto;
+  font-style: normal;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap : 15px;
+}
+
+
+@media (max-width: 767px) {
+  @container (min-width: 375px) {
   .guide {
-    display: flex;
-    justify-content: center;
-    padding: 1.6em 0 ;
-    gap: 20px;
+    width: 344px;
+  }
+}
+
+}
+
+@media (min-width: 768px) {
+  .guide {
+  flex-flow: row nowrap;
+  width: clamp(610px, 79.427%, 800px);
+    
   }
 
   .guide em {
@@ -34,22 +131,5 @@
     margin: 2.5em auto 0;
   }
   
-  .address {
-    /* width: 610px; */
-    width: clamp(610px, 79.427%, 800px);
-    margin: 0 auto;
-    font-style: normal;
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    column-gap : 15px;
-  }
-  
-  .footer-wrapper-3 {
-    margin-top: 1.6em;
-  }
-  
-  .footer-wrapper-4 {
-    margin-top: 1.6em;
-  }
-}
+
+} */
