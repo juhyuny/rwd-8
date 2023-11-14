@@ -1,0 +1,55 @@
+/* 푸터 컴포넌트 */
+.footer {
+  background: var(--grayscale-black);
+  color: var(--grayscale-light-gray);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: -0.015em;
+  text-align: center;
+  padding-bottom: 2.5em;
+}
+
+.footer * {
+    font-style: normal;
+}
+
+@media (min-width: 768px) {
+  .footer-wrapper-1 {
+    margin: 0 auto;
+    border-bottom: 1px solid var(--grayscale-gray);
+  }
+  
+  .guide {
+    display: flex;
+    justify-content: center;
+    padding: 1.6em 0 ;
+    gap: 20px;
+  }
+
+  .guide em {
+    color: var(--grayscale-white);
+  }
+
+  .footer .footer-logo {
+    margin: 2.5em auto 0;
+  }
+  
+  .address {
+    /* width: 610px; */
+    width: clamp(610px, 79.427%, 800px);
+    margin: 0 auto;
+    font-style: normal;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap : 15px;
+  }
+  
+  .footer-wrapper-3 {
+    margin-top: 1.6em;
+  }
+  
+  .footer-wrapper-4 {
+    margin-top: 1.6em;
+  }
+}

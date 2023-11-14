@@ -6,7 +6,7 @@
   padding: 2rem;
 }
 
-.logo-link {
+.logo-link, .logo-figure {
   --size: 8.75em;
 
   display: block;
@@ -16,7 +16,7 @@
 }
 
 @media (min-width: 768px) {
-  .logo-link {
+  .logo-link, .logo-figure {
     width: 10em;
   }
 }
