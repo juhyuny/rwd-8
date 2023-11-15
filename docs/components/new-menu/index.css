@@ -5,3 +5,122 @@
   row-gap: 1rem;
   padding: 2rem;
 }
+
+/* 신메뉴 컨테이너 */
+.new-menu {
+  background-color: var(--scondary-light-blue-1);
+  padding: 40px 0 20px;
+}
+
+.new-menu-text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.new-menu-text p[lang="en"] {
+  background-color: yellow;
+  color: rgba(20, 24, 44, 0.90);
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 1.1; 
+  letter-spacing: -1px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-menu-text p[lang="en"] em {
+  font-weight: 900;
+  color: #24388d;
+}
+
+@media (min-width: 768px) {
+  .new-menu {
+    padding: 50px 0;
+  }
+  .new-menu-text {
+    row-gap: 30px;
+  }
+  .new-menu-text p[lang="en"] {
+    flex-flow: row nowrap;
+    column-gap: 0.5em;
+  }
+}
+
+
+/* 구분선 */
+.new-menu .divider {
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+}
+
+/* 한글 단락 스타일 */
+.new-menu p:nth-of-type(2) {
+  background-color: pink;
+  color: rgba(20, 24, 44, 0.90);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.1; 
+letter-spacing: -0.2px;
+}
+
+/* 메뉴 보기 링크 */
+.go-menu {
+  color: #24388D;
+  border: 1px solid currentColor;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* 이디야 음료 이미지 */
+[class^='beverage-name--ko'] {
+  font-size: 16px;
+}
+[class^='beverage-name--en'] {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.beverage-name--ko-primary {
+  color: #2c68ae;
+  font-weight: 700;
+}
+.beverage-name--ko-secondary {
+  color: #72bde3;
+}
+.beverage-name--en-accent {
+  color: #a7d1e7;
+}
+
+.beverage-name {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .beverage {
+    position: relative;
+  }
+  
+  .beverage-name {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    background-color: #986333 ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .beverage-name {
+  flex-flow: row nowrap;
+  }
+}
+

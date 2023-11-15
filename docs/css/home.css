@@ -146,7 +146,7 @@ background-color: #102457;
   }
   .inform-inner {
     display: grid;  
-    grid-template-columns: 4105px 355px;
+    grid-template-columns: 410px 355px;
     grid-template-rows: auto;
     grid-template-areas: 
     'youtube notice'
